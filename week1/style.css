@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color:#A6CD48 ;
+  color:white;
+  text-align: center;
+  height:60px;
+  line-height: 60px;
+}
+
+main{
+  display:flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+aside.sideBar{
+  flex:1;
+  background-color: #EE7D6C;
+  border-radius: 10px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px;
+  gap: 10px;
+  height: 140px;
+}
+
+aside.sideBar > button {
+  background-color: white;
+  border: 0;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 15px;
+}
+
+button.todaySale {
+  background-color: #FAA194 !important;
+  font-weight: bold;
+}
+
+
+section.cosmetic{
+  flex:6;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 25px;
+}
+
+article.cosmeticCard{
+  display: flex;
+  background-color: white;
+  border: 1px solid #AAAAAA;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px #AAAAAA;
+  width: 48.5%;
+  padding: 10px 20px;
+  gap: 25px;
+}
+
+article.cosmeticCard:hover {
+    background-color: #FFC9C0;
+
+}
+
+article.cosmeticCard > img{
+  width: 150px;
+  border-radius: 10px;
+}
+
+div.cosmeticContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.cosmeticContent.h3 {
+  font-size: 15px;
+}
+
+
+aside.cart{
+  flex:2.5;
+  background-color: #FAA194;
+  border-radius: 10px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;  
+  padding: 15px 15px;
+  gap: 10px;
+  height: 270px;
+  position: sticky;
+  top: 15px;
+}
+
+div.cartItem {
+  margin: 10px 0;
+}
+
+aside.cart > hr {
+  border: solid 1px #EEEEEE;
+  margin: 10px 0;
+}
+
+div.cartBtn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+div.cartBtn > button {
+  background-color: #EEEEEE;
+  border: 0;
+  width: fit-content;
+  padding : 5px 10px;
+  border-radius: 15px;
+  height: 30px;
+  font-size: 15px;
+}
